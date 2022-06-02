@@ -11,6 +11,7 @@
     --portfolio-btn-color: #F5F4FA;
     --pec-container-color: #f5f4fa;
     --social-link: #afb1b8;
+    --animation: 
 }
 
 body {
@@ -136,6 +137,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--header-text-color);
+    transition: color 250ms var(--animation);
 }
 
 .header-item.link {
@@ -146,7 +148,7 @@ img {
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: var(--header-link-color);
-    transition: color 250ms var(--timing-function);
+    transition: color 250ms var(--animation);
 }
 
 .studio-link::after {
@@ -219,6 +221,7 @@ img {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--sub-text-color);
+    transition: color 250ms var(--animation);
 }
 
 .contact-icon-mail {
@@ -247,7 +250,7 @@ img {
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;    
-
+    margin: 0 auto;
 }
 
 .hero-title {
@@ -304,7 +307,7 @@ img {
     border-radius: 4px;
     background-color: var(--pec-container-color);
     margin-bottom: 30px;
-    
+    margin-right: 30px;
 }
 
 .peculiarities-icon-container:not(:last-child) {
