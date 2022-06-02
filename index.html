@@ -57,7 +57,7 @@
                     <h1 class="hero-title">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <button type="button" class="hero-button">
+                    <button type="button" class="hero-button" data-modal-open>
                         Заказать услугу
                     </button>
                 </div>  
@@ -125,12 +125,21 @@
                     <ul class="skills-list">
                         <li class="img">
                             <img src="./images/box1.jpg" alt="box1" width="370" height="294">
+                            <div class="skills-description-container">
+                                <p class="skills-description">десктопные приложения</p>
+                            </div>
                         </li>
                         <li class="img">
                             <img src="./images/box2.jpg" alt="box2" width="370" height="294">
+                            <div class="skills-description-container">
+                                <p class="skills-description">мобильные приложения</p>
+                            </div>
                         </li>
                         <li class="img">
                             <img src="./images/box3.jpg" alt="box3" width="370" height="294">
+                            <div class="skills-description-container">
+                                <p class="skills-description">дизайнерские решения</p>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -304,21 +313,21 @@
                     <ul class="client-list">
                         <li class="client-item">
                             <a href="" class="client-link">
-                                <svg class="client" width="41" height="46.7">
-                                    <use href="./images/symbol-defs.svg#client1" width="40.7" height="46.4"></use>
+                                <svg class="client">
+                                    <use href="./images/symbol-defs.svg#client1"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="client-item">
                             <a href="" class="client-link">
-                                <svg class="client" width="40px" height="52">
+                                <svg class="client">
                                     <use href="./images/symbol-defs.svg#client2"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="client-item">
                             <a href="" class="client-link">
-                                <svg class="client" width="43.46">
+                                <svg class="client">
                                     <use href="./images/symbol-defs.svg#client3"></use>
                                 </svg>
                             </a>
@@ -395,5 +404,15 @@
                 </div>
             </div>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-button" data-modal-close>
+                    <svg class="close-modal" width="11" height="11">
+                            <use href="./images/symbol-defs.svg#close"></use>
+                        </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
